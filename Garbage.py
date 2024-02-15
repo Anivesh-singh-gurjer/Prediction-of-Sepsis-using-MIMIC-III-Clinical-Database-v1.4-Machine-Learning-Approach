@@ -1,4 +1,4 @@
-"""
+
 import csv
 
 def extract_rows(input_file, output_prefix, allowed_itemids, rows_per_file=1000000):
@@ -2867,6 +2867,4 @@ mimic_dataset_v2 = pd.merge(non_sep_df, modified_Srec_V2, on='Patient_ID', how='
 # Step 5: Save the resulting CSV as MIMIC_DATASET_V2.csv
 mimic_dataset_v2_path = r'D:\Python\MIMIC_CODE\MIMIC_DATASET_V2.csv'
 mimic_dataset_v2.to_csv(mimic_dataset_v2_path, index=False)
-
-"""
 
